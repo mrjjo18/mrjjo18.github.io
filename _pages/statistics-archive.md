@@ -1,6 +1,9 @@
 ---
 title: "Posts by Statistics"
-layout: statistics
-permalink: /statistics/
+permalink: /categories/statistics/
+layout: category
 author_profile: true
+taxonomy: statistics
 ---
+
+
