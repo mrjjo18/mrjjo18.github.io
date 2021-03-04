@@ -2,8 +2,14 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Categories"
-    url: /categories/
+  - title: "Statistics"
+    url: /statistics/
+  - title: "Python"
+    url: /python/
+  - title: "MachineLearning"
+    url: /machinelearning/
+  - title: "etc"
+    url: /etc/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
