@@ -1,6 +1,9 @@
 ---
 title: "Posts by MachineLearning"
-layout: machinelearning
-permalink: /machinelearning/
+permalink: /categories/machinelearning/
+layout: category
 author_profile: true
+taxonomy: machinelearning
 ---
+
+
