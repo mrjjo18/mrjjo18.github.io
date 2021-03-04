@@ -4,10 +4,10 @@ main:
     url: /about/
   - title: "Statistics"
     url: /categories/statistics/
-  - title: "Python"
-    url: /categories/python/
   - title: "MachineLearning"
     url: /categories/machinelearning/
+  - title: "Programming"
+    url: /categories/programming/
   - title: "etc"
     url: /categories/etc/
   # - title: "About"
