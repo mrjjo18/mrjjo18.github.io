@@ -1,39 +1,33 @@
 ---
-title: Search
-description: "Search this site"
-layout: page
+layout: search
+page_title: Search
 permalink: /search/
-tipue_search_active: true
-exclude_from_search: true
 ---
 
-<!-- search box -->
-<form action="/search">
-  <div class="tipue_search_box">
-    <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-    <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="최소 1글자 이상" required></div>
-  <div style="clear: both;"></div>
-</form>
+<div class="container">
+<div class="row">
+ <div class="col-12">
+   <div id="search-bar">
+     <i class="fa fa-search" aria-hidden="true"></i>
+     <input id="search-input" type="text" placeholder="Search..." />
+   </div>
+   <ul id="results-container"></ul>
+ </div>
+</div>
+</div>
 
----
-title: Search
-description: "Search this site"
-layout: main
-permalink: /search/
-tipue_search_active: true 
-<!-- # tipuesearch function을 실행하라는 의미 -->
-exclude_from_search: true 
-<!-- # tipuesearch 검색대상에서 제외하라는 의미 -->
----
-<div id="tipue_search_content"></div> 
-<!-- # 이 부분은 search_content.js가 담당한다. -->
-<script>
-$(document).ready(function() {
-  $('#tipue_search_input').tipuesearch({
-    'wholeWords' : false, 
-    'showTime' : false,
-    'minimumLength' : 1  });
+<!-- Script pointing to jekyll-search.js -->
+<script src="/assets/js/jekyll-search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+SimpleJekyllSearch({
+     searchInput: document.getElementById('search-input'),
+     resultsContainer: document.getElementById('results-container'),
+     json: '/search.json',
+     searchResultTemplate: '<li><a href="{url}" title="{desc}" target="_blank">{title}</a></li>',
+     noResultsText: 'No results found',
+     limit: 10000,
+     fuzzy: false,
+     exclude: ['Welcome']
 });
 </script>
-
-
