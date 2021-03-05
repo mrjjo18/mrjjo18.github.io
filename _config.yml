@@ -267,6 +267,16 @@ compress_html:
   ignore:
     envs: development
 
+#search banner
+tipue_search:
+    include:
+        pages: false
+        collections: []
+    exclude:
+        files: [search.html, index.html, tags.html]
+        categories: []
+        tags: []
+
 
 # Defaults
 defaults:
